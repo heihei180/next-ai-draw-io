@@ -4,6 +4,8 @@ import { findCachedResponse } from '@/lib/cached-responses';
 import { z } from "zod";
 
 export const maxDuration = 300;
+export const runtime = 'edge'; // 👈 关键！告诉 Next.js 使用 Edge Runtime
+
 
 // Helper function to check if diagram is minimal/empty
 function isMinimalDiagram(xml: string): boolean {
