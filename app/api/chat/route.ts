@@ -4,6 +4,7 @@ import { findCachedResponse } from '@/lib/cached-responses';
 import { z } from "zod";
 
 export const maxDuration = 300;
+// cloudFlare 适配
 export const runtime = 'edge'; // 👈 关键！告诉 Next.js 使用 Edge Runtime
 
 
